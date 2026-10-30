@@ -192,7 +192,7 @@
         <string>function</string>
        </property>
        <property name="key" stdset="0">
-        <string>⌫</string>
+        <string>Backspace</string>
        </property>
       </widget>
      </item>

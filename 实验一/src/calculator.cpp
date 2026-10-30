@@ -1,4 +1,4 @@
-#include "calculator.h"
+﻿#include "calculator.h"
 #include "ui_calculator.h"
 
 #include <QFontMetricsF>
@@ -14,7 +14,7 @@ namespace {
 // 语义按键在键盘上的别名（供 keyFromEvent 与 dispatch 共用）
 inline QString backspaceKey()
 {
-    return QStringLiteral("⌫");
+    return QStringLiteral("Backspace");
 }
 inline QString equalsKey()
 {
