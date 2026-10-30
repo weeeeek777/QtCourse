@@ -1,0 +1,29 @@
+# 构建目录
+build/
+build-*/
+out/
+
+# Qt Creator / Visual Studio 用户文件
+*.user
+*.user.*
+CMakeLists.txt.user
+.vs/
+.vscode/
+CMakeSettings.json
+
+# 编译产物
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+*.ilk
+*.exp
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 日志
+*.log
