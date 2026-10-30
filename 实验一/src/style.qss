@@ -1,0 +1,95 @@
+/* 全局字体与窗口背景 */
+QWidget#Calculator {
+    background-color: #eef0f3;
+    font-family: "Segoe UI", "Segoe UI Symbol", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
+/* 算式行：小号灰字，右对齐 */
+QLineEdit#expressionDisplay {
+    background: transparent;
+    border: none;
+    color: #7a7f87;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+/* 主显示区：大号深色数字（字号在代码中按宽度自适应） */
+QLineEdit#display {
+    background: transparent;
+    border: none;
+    color: #111827;
+    padding-right: 10px;
+}
+
+/* 错误提示：红色小字 */
+QLineEdit#display[error="true"] {
+    color: #c42b1c;
+}
+
+/* 按钮通用外观 */
+QPushButton {
+    border: 1px solid #e2e5ea;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #111827;
+    font-size: 18px;
+    font-family: "Segoe UI", "Segoe UI Symbol", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #f6f8fb;
+    border-color: #d3d8e0;
+}
+
+QPushButton:pressed {
+    background-color: #e8ecf2;
+}
+
+/* 数字键：白底、字号最大 */
+QPushButton[role="digit"] {
+    background-color: #ffffff;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+QPushButton[role="digit"]:hover {
+    background-color: #f6f8fb;
+}
+
+/* 功能键：浅灰底、次级文字颜色 */
+QPushButton[role="function"] {
+    background-color: #f8f9fb;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+QPushButton[role="function"]:hover {
+    background-color: #eef1f6;
+}
+
+/* 运算符：灰蓝底的强调块 */
+QPushButton[role="operator"] {
+    background-color: #eef1f6;
+    font-size: 24px;
+}
+
+QPushButton[role="operator"]:hover {
+    background-color: #e2e7f0;
+}
+
+/* 等号：蓝色强调 */
+QPushButton[role="equals"] {
+    background-color: #2f6fed;
+    border: none;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+QPushButton[role="equals"]:hover {
+    background-color: #2a63d4;
+}
+
+QPushButton[role="equals"]:pressed {
+    background-color: #2456ba;
+}
